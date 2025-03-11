@@ -21,15 +21,16 @@
         list-style-type: none;
         gap: 25%;
         margin-left:20% ;
+        font-weight: bold;
 }
 #dowl{
     width: 15%;
+    font-weight: bolder;
 }
 #dowl > button {
     width: 50%;
     background-color: #7A9757;
     color: #fff;
-    font-weight: bolder;
     padding: 10px;
     border: 0px solid green;
 

@@ -1,0 +1,52 @@
+.main2{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+color: white;
+margin-top: 5%;
+}
+.first-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-para {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensure left alignment */
+    justify-content: center;
+}
+
+.first-section > div > h1,
+.head-para > p {
+    width: 90%; /* Same width to align properly */
+    margin: 0; /* Remove unwanted margins */
+    margin-top: 25px;
+}
+
+.first-section h1 {
+    font-size: 9vh;
+}
+
+.head-para > p {
+    font-size: medium;
+    margin-left: 50px;
+
+}
+
+.first-section h1 span {
+    color: #7A9757;
+    font-weight: bold;
+}
+
+.second-section{
+width: 30%;
+}
+.second-section > img {
+    width: 50%;
+    /* height: 100%; */
+}

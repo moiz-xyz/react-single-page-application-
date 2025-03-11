@@ -13,7 +13,6 @@ function Navbar() {
       </div>
       <div id="dowl">
         <button>Download</button>
-
       </div>
     </div>
   );
