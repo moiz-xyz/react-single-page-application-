@@ -1,8 +1,8 @@
-
 .main3{
     width: 100%;
-    height: 100vh;
-    color: white;
+    height: auto;
+    background-color: white;
+    color: black;
 }
 .about{
         display: flex;
@@ -17,7 +17,6 @@
 }
 .about > img {
     margin-top: 1%;
-
 }
 span {
     color: #7a9757;
@@ -26,4 +25,32 @@ span {
     width: 50%;
     margin-top: 1%;
 
+}
+.section{
+    display: flex;
+    width: 100%;
+    margin-top: 7%;
+}
+.mobile{
+    width: 40%;
+    margin-left: 15%;
+}
+.mobile>img {
+    width: 90%;
+}
+.section-mini{
+    width: 50%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.section-mini > h3 {
+    font-size: 5vh;
+}
+.section-mini >  p {
+font-size: medium;
+font-weight: lighter;
 }
