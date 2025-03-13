@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 7%;
+    padding-top:5%;
 }
 .about > h2 {
     margin-top: 2%;
@@ -36,15 +36,14 @@ span {
     margin-left: 15%;
 }
 .mobile>img {
-    width: 90%;
+    width: 80%;
 }
 .section-mini{
     width: 50%;
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top: 5%;
 }
 .section-mini > h3 {
@@ -52,5 +51,37 @@ span {
 }
 .section-mini >  p {
 font-size: medium;
-font-weight: lighter;
+padding: 15px 0px;
 }
+.section-mini > div {
+    display: flex;
+    align-items: start;
+    /* justify-content:space-between; */
+    gap: 20px;
+    margin-top: 8%;
+    }
+.section-mini > div  button {
+       width: 30%;
+       padding: 15px 10px;
+       font-weight: bold;
+    }
+    .btn1 {
+    background-color:  #7a9757;
+    color: white;
+    font-size: larger;
+    border: 0px solid  green;
+    }
+    .btn1:hover {
+        background: transparent;
+        color: black;
+    }
+    .btn2{
+        background: transparent;
+        color: black;
+        font-size: large;
+        border: 1px solid  black;
+    }
+    .btn2:hover{
+        background-color:  #7a9757;
+        color: white;
+    }

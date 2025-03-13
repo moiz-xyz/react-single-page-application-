@@ -17,10 +17,12 @@ let About = ()=> {
                 </div>
                 <div className="section-mini">
                 <h3>BEST <span> APNEW </span> </h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master of human happiness. No one rejects, dislikes, <br></br>
-                   mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the</p>               
-               <button> DOWNLOAD </button>
-               <button> LERAN MORE </button>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master of human happiness. No one rejects, dislikes, <br></br>  <br></br>
+                    mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the</p>               
+             <div>
+               <button className="btn1"> DOWNLOAD </button>  <br></br>
+               <button className="btn2"> LEARN MORE </button>
+             </div>
                 </div>
 
             </div>
