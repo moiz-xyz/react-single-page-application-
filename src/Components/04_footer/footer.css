@@ -1,3 +1,6 @@
+span {
+    color: #7A9757;
+}
 .footer {
     width: 100%;
     min-height: 100vh; /* Changed height to min-height for better responsiveness */
@@ -99,6 +102,7 @@
     align-items: center;
     width: 100%;
     flex-wrap: wrap; /* Allows input and button to stack */
+    margin-top: 5%;
 }
 
 .subform > input {
@@ -139,7 +143,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 40vh;
     background-color: #2c3e50;
 }
 
@@ -148,11 +152,11 @@
     gap: 15px;
 }
 
-.icon {
+.icon{
     width: 45px;
     height: 45px;
-    border: 2px solid white;
     border-radius: 50%;
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
