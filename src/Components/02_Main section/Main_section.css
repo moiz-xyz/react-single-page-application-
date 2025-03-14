@@ -1,160 +1,180 @@
+/* General Styling */
 .main2 {
-    width: 89%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding: 5%;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .first-section {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .head-para h1 {
-    font-size: 10vh;
-    line-height: 1.2;
-    margin-bottom: 15px;
-  }
-  
-  .head-para h1 span {
-    color: #7a9757;
-    font-weight: bold;
-  }
-  
-  .head-para p {
-    font-size: 1rem;
-    width: 80%;
-    line-height: 1.2;
-    opacity: 0.8;
-  }
-  
-  .button-container {
-    margin-top: 20px;
-  }
-  
-  .button-container button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    margin-right: 15px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .download-btn {
-    background-color: #7a9757;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .download-btn:hover {
-    background-color: #5c7342;
-  }
-  
-  .learn-btn {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-  }
-  
-  .learn-btn:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .second-section {
-    width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .second-section img {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  @media (max-width: 1024px) {
-    .main2 {
+  width: 89%;
+  min-height: 100vh; /* Prevent overflow issues */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 5%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* First Section */
+.first-section {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Headings & Paragraphs */
+.head-para h1 {
+  font-size: 10vh;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.head-para h1 span {
+  color: #7a9757;
+  font-weight: bold;
+}
+
+.head-para p {
+  font-size: 1rem;
+  width: 80%;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button-container button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Download Button */
+.download-btn {
+  background-color: #7a9757;
+  color: white;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: #5c7342;
+}
+
+/* Learn More Button */
+.learn-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.learn-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Second Section */
+.second-section {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ======= Responsive Design ======= */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  .main2 {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .first-section {
-      width: 90%;
+      padding: 3%;
+  }
 
-    }
-  
-    .head-para h1 {
+  .first-section {
+      width: 90%;
+  }
+
+  .head-para h1 {
       font-size: 6vh;
-    }
-  
-    .head-para p {
+  }
+
+  .head-para p {
       width: 100%;
-    }
-  
-    .second-section {
+  }
+
+  .second-section {
       width: 100%;
       margin-top: 20px;
-    }
-  
-    .second-section img {
+  }
+
+  .second-section img {
       width: 70%;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .first-section {
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .first-section {
       width: 100%;
-    }
-  
-    .head-para h1 {
+  }
+
+  .head-para h1 {
       font-size: 5vh;
-    }
-  
-    .button-container button {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .second-section img {
+  }
+
+  .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .button-container button {
       width: 80%;
-    }
   }
-  @media (max-width: 480px) {
-    .main2 {
-        flex-wrap: unset;
-    }
-    .first-section {
-        margin-top: 120%;
-        width: 100%;
-      }
-       
-      .head-para p {
-        font-size: 1rem;
-        width: 100%;
-      }
-      .second-section {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .second-section img {
-        width: 100%;
-        max-width: 100%;
-      }
-      
+
+  .second-section img {
+      width: 80%;
   }
-  
-  
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .main2 {
+      flex-wrap: unset;
+      padding: 2%;
+  }
+
+  .first-section {
+      margin-top: 10vh; /* Fixed margin */
+      width: 100%;
+  }
+
+  .head-para p {
+      font-size: 1rem;
+      width: 100%;
+  }
+
+  .second-section {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .second-section img {
+      width: 100%;
+      max-width: 300px;
+  }
+}

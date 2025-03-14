@@ -1,40 +1,97 @@
-.main{
+/* General Styling */
+.main {
     width: 100%;
     height: 20vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: white;
     margin-top: 2%;
     font-family: sans-serif;
+    padding: 0 5%;
 }
-.logo{
+
+/* Logo Section */
+.logo {
     width: 30%;
 }
-.logo >img {
-    width: 50%;
+.logo img {
+    width: 100%;
+    max-width: 150px; /* Ensures it doesn't get too big */
 }
-.lists{
-        width: 35%;
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-        gap: 25%;
-        margin-left:20% ;
-        font-weight: bold;
+
+/* Navigation Menu */
+.lists {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    font-weight: bold;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
-#dowl{
+
+/* Download Button Section */
+#dowl {
     width: 15%;
     font-weight: bolder;
 }
-#dowl > button {
-    width: 50%;
+#dowl button {
+    width: 100%;
     background-color: #7A9757;
-    color: #fff;
+    color: white;
     padding: 10px;
-    border: 0px solid green;
-
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+#dowl button:hover {
+    background-color: #5b763a;
 }
 
-.lists , #dowl :hover {
+/* Navigation Hover Effect */
+.lists li:hover {
+    color: #7A9757;
     cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .lists {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #dowl {
+        width: 50%;
+        text-align: center;
+    }
+
+    #dowl button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lists {
+        flex-direction: column;
+    }
+
+    #dowl {
+        width: 80%;
+    }
 }

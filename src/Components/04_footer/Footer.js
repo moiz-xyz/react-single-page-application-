@@ -28,7 +28,7 @@ return (
         </div>
         
     </div>
-<div className="subsribe">
+<div className="subscribe">
     <div className="text">
     <h1>SUBSCRIBE FOR OUR NEWSLETTER</h1>
  <p>There are many variations of passages of Lorem Ipsum available,
